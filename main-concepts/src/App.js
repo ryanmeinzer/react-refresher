@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome'
+import Time from './Time'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Welcome name="Sara" />
         <Welcome name="Cahal" />
         <Welcome name="Edite" />
+        <Time time={new Date()}/>
+        
       </header>
     </div>
   );
