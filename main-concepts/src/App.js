@@ -1,9 +1,7 @@
+import React from 'react'
 import logo from './logo.svg';
 import './App.css';
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>
-}
+import Welcome from './Welcome'
 
 function App() {
   return (
@@ -22,6 +20,8 @@ function App() {
           Learn React
         </a>
         <Welcome name="Sara" />
+        <Welcome name="Cahal" />
+        <Welcome name="Edite" />
       </header>
     </div>
   );
