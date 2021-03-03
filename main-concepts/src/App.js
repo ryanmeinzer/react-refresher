@@ -8,6 +8,7 @@ import Toggle from './Toggle'
 import Greeting from './Greeting'
 import LoginControl from './LoginControl'
 import Warning from './Warning'
+import List from './List'
 
 function App() {
   const messages = ['Hi', 'Hello', 'Yo']
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <List />
         {messages.length > 0 &&
           <h1>You have {messages.length} messages.</h1>
         }
