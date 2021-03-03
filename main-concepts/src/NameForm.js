@@ -4,7 +4,8 @@ export default class NameForm extends Component {
 
     state = {
         textBox: '',
-        essayBox: 'Please write an essay about your favorite DOM element.'
+        essayBox: 'Please write an essay about your favorite DOM element.', 
+        selectionBox: 'coconut'
     }
 
     handleChange = (event) => {
@@ -26,11 +27,20 @@ export default class NameForm extends Component {
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Text:
-                    <input type="text" name="textBox" value={this.state.text} onChange={this.handleChange} />
+                    <input type="text" name="textBox" value={this.state.textBox} onChange={this.handleChange} />
                 </label>
                 <label>
                     Essay:
-                    <textarea name="essayBox" value={this.state.essay} onChange={this.handleChange} />
+                    <textarea name="essayBox" value={this.state.essayBox} onChange={this.handleChange} />
+                </label>
+                <label>
+                    Pick your favorite flavor:
+                    <select name="selectionBox" value={this.state.selectionBox} onChange={this.handleChange}>
+                        <option value="grapefruit">Grapefruit</option>
+                        <option value="lime">Lime</option>
+                        <option value="coconut">Coconut</option>
+                        <option value="mango">Mango</option>
+                    </select>
                 </label>
                 <input type="submit" value="Submit" />
             </form>
