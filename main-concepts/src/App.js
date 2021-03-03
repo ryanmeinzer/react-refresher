@@ -4,6 +4,7 @@ import './App.css';
 import Welcome from './Welcome'
 import Time from './Time'
 import Clock from './Clock'
+import Toggle from './Toggle'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Welcome name="Edite" />
         <Time time={new Date()} />
         <Clock />
+        <Toggle />
         
       </header>
     </div>
