@@ -7,6 +7,7 @@ import Clock from './Clock'
 import Toggle from './Toggle'
 import Greeting from './Greeting'
 import LoginControl from './LoginControl'
+import Warning from './Warning'
 
 function App() {
   const messages = ['Hi', 'Hello', 'Yo']
@@ -25,7 +26,7 @@ function App() {
         <Clock />
         <Toggle />
         <Greeting isLoggedIn={false} />
-        
+        <Warning />
       </header>
     </div>
   );
