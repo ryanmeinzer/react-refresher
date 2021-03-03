@@ -5,6 +5,7 @@ import Welcome from './Welcome'
 import Time from './Time'
 import Clock from './Clock'
 import Toggle from './Toggle'
+import Greeting from './Greeting'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Time time={new Date()} />
         <Clock />
         <Toggle />
+        <Greeting isLoggedIn={false} />
         
       </header>
     </div>
