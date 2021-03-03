@@ -6,6 +6,7 @@ import Time from './Time'
 import Clock from './Clock'
 import Toggle from './Toggle'
 import Greeting from './Greeting'
+import LoginControl from './LoginControl'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <LoginControl />
         <Welcome name="Sara" />
         <Welcome name="Cahal" />
         <Welcome name="Edite" />
