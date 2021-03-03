@@ -9,21 +9,14 @@ import Greeting from './Greeting'
 import LoginControl from './LoginControl'
 
 function App() {
+  const messages = ['Hi', 'Hello', 'Yo']
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {messages.length > 0 &&
+          <h1>You have {messages.length} messages.</h1>
+        }
         <LoginControl />
         <Welcome name="Sara" />
         <Welcome name="Cahal" />
