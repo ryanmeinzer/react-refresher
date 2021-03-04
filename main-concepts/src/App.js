@@ -10,6 +10,7 @@ import LoginControl from './LoginControl'
 import Warning from './Warning'
 import List from './List'
 import NameForm from './NameForm'
+import Calculator from './Calculator'
 
 function App() {
   const messages = ['Hi', 'Hello', 'Yo']
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Calculator />
         <NameForm />
         <List />
         {messages.length > 0 &&
