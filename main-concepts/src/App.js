@@ -11,6 +11,7 @@ import Warning from './Warning'
 import List from './List'
 import NameForm from './NameForm'
 import Calculator from './Calculator'
+import WelcomeDialog from './WelcomeDialog'
 
 function App() {
   const messages = ['Hi', 'Hello', 'Yo']
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <WelcomeDialog />
         <Calculator />
         <NameForm />
         <List />
