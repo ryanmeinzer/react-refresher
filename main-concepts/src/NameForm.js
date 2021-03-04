@@ -18,7 +18,7 @@ export default class NameForm extends Component {
     }
 
     handleSubmit = (event) => {
-        alert('A name was submitted: ' + this.state.value)
+        alert('Some text was submitted: ' + this.state.textBox)
         event.preventDefault()
     }
 
